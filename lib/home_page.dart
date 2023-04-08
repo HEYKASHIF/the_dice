@@ -10,8 +10,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.amber,
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        title: Text("The Dice"),
+        backgroundColor: Colors.pink,
+        centerTitle: true,
+      ),
     );
   }
 }
