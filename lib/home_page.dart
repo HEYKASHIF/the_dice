@@ -11,6 +11,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int number = Random().nextInt(6) + 1;
+  void GenerateNumber() {
+    setState(() {
+      number = Random().nextInt(6) + 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +28,10 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Center(
-        child: Image.asset('assets/images/$number.png'),
+        child: InkWell(
+          onTap: GenerateNumber,
+          child: Image.asset('assets/images/$number.png'),
+        ),
       ),
     );
   }
