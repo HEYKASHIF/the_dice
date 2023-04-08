@@ -11,14 +11,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink,
       appBar: AppBar(
         elevation: 0,
         title: Text("The Dice"),
         backgroundColor: Colors.pink,
         centerTitle: true,
-      ),
-      body: Container(
-        color: Colors.pink,
       ),
     );
   }
