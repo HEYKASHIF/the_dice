@@ -17,6 +17,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.pink,
         centerTitle: true,
       ),
+      body: Container(
+        color: Colors.pink,
+      ),
     );
   }
 }
