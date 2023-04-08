@@ -23,7 +23,10 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.pink,
       appBar: AppBar(
         elevation: 0,
-        title: Text("THE DICE"),
+        title: Text(
+          "THE DICE",
+          style: TextStyle(color: Colors.grey[900]),
+        ),
         backgroundColor: Colors.pink,
         centerTitle: true,
       ),
