@@ -18,6 +18,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.pink,
         centerTitle: true,
       ),
+      body: Center(
+        child: Image.asset('assets/images/6.png'),
+      ),
     );
   }
 }
